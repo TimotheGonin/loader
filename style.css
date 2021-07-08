@@ -12,3 +12,13 @@ body {
     align-items: center;
     background: #f1f1f1;
 }
+
+.container {
+    width: 1000px;
+    height: 800px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
