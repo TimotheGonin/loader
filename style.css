@@ -1,3 +1,5 @@
+/* GOLOBAL RULES */
+
 * ::before,
 ::after {
     box-sizing: border-box;
@@ -31,4 +33,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Animations 1*/
+
+.anim1 {
+    width: 64px;
+    height: 64px;
+    border: 6px solid rgb(128, 128, 128);
+    border-color: #333 transparent #333 transparent;
+    border-radius: 50%;
+    animation: anim1 1.2s ease-out 3;
+}
+@keyframes anim1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
