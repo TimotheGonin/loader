@@ -425,3 +425,54 @@ body {
         opacity: 0;
     }
 }
+
+/* Animation 11 */
+
+.anim:nth-child(11) {
+    background: #fff;
+}
+
+.anim11 {
+    width: 142px;
+    height: 40px;
+    background: #fff;
+    filter: contrast(20);
+    position: relative;
+}
+
+.anim11 .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+    animation: point 2.8s infinite;
+}
+.anim11 .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+}
+.anim11 .dots {
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: points 2.8s infinite;
+}
+@keyframes point {
+    50% {
+        transform: translateX(96px);
+    }
+}
+@keyframes points {
+    50% {
+        transform: translateX(-31px);
+    }
+}
