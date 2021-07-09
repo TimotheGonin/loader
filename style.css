@@ -159,3 +159,62 @@ body {
         transform: scale(1);
     }
 }
+
+/* Animation 5 */
+
+.box5 {
+    background: #333;
+}
+.anim5 {
+    display: flex;
+}
+.letter {
+    color: #484848;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    animation: flash 1.5s ease-in-out infinite;
+}
+
+/* delay */
+.letter:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.letter:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.letter:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.letter:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.letter:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.letter:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.letter:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.letter:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.letter:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+@keyframes flash {
+    0% {
+        color: #484848;
+        text-shadow: none;
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px, 0 0 50px #ff6c00;
+    }
+}
