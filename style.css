@@ -476,3 +476,23 @@ body {
         transform: translateX(-31px);
     }
 }
+
+/* Animation 12 */
+.panneau {
+    width: 40px;
+    height: 40px;
+    background: #333;
+    animation: movepan 1.2s infinite ease-in-out;
+}
+
+@keyframes movepan {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
