@@ -236,3 +236,28 @@ body {
         letter-spacing: 3px;
     }
 }
+
+/* Animation 7 */
+
+.roundFast {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, gold, salmon);
+    border: 1px solid #333;
+    animation: spinspin 2.4s infinite;
+}
+
+@keyframes spinspin {
+    0% {
+        animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(1800deg);
+        animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+        tranform: rotateY(3600deg);
+    }
+}
